@@ -1,0 +1,496 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* div, section{
+    border: 1px solid black;
+} */
+
+/*********************헤더 / 메인 나누기*********************/
+
+header{
+    height: 30px;
+    display: flex;
+    margin: 10px;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+/********************헤더 영역 지정**********************/
+
+header .header-left, header .header-right{
+    flex-basis: 20%;
+}
+
+header .search-area{
+    flex-basis: 60%;
+}
+
+header section {
+    display: flex;
+}
+
+/********************header-left**********************/
+#hamberger-button{
+    color: gray;
+    border: none;
+    background-color: transparent;
+}
+
+#youtube-logo{
+    width: 50px;
+}
+
+.header-left img{
+    flex-basis: 50%;
+
+    height: 100%;
+
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************검색창**********************/
+.search-area section{
+    flex-basis: calc(100%/3);
+}
+
+header > section:nth-child(2){
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.search-area fieldset{
+    margin: 2px;
+    padding: 2px;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+}
+
+fieldset > section{
+    border: 1px solid grey;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 2px;
+
+    height: 80%;
+    display: flex;
+}
+
+fieldset section{
+    margin-right: 5px;
+}
+
+#query{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+        
+    flex-basis: 80%;
+}
+
+#keyboard-btn, #x-btn{
+    color: gray;
+    border: none;
+    background-color: transparent;
+
+    flex-basis: 10%;
+    cursor: pointer;
+
+    padding-right: 5px;
+}
+
+#search-btn {
+    color: black;
+    border: none;
+    background-color: transparent;
+
+    flex-basis: 10%;
+    cursor: pointer;
+
+    font-size: 0.8em;
+    margin-right: 5px;
+
+    line-height: 20px;
+}
+
+.img-wrapper{
+    width: 25px;
+    height: 25px;
+    background-color: lightgray;
+
+    border-radius: 70px;
+
+    overflow: hidden;
+/* 
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#mike-btn{
+    color: black;
+
+    border: none;
+    background-color: transparent;
+
+    flex-basis: 10%;
+    cursor: pointer;
+
+    /* padding-right: 10px; */
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/********************header-right**********************/
+
+.header-right > section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right button {
+    color: black;
+    border: none;
+    background-color: transparent;
+}
+
+.header-right > section:nth-child(1){
+    flex-basis: 55%;
+}
+
+.header-right > section:nth-child(2),
+.header-right > section:nth-child(3),
+.header-right > section:nth-child(4){
+    flex-basis: 15%;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/********************main 영역 나누기**********************/
+
+.main-left, .main-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-left{
+    flex-basis: 70%;
+
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+.main-right{
+    flex-basis: 30%;
+    
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+/********************main-left 영역 나누기**********************/
+
+.main-left > section:nth-child(1){
+    flex-basis: 75%;
+}
+/* 
+.main-left > section:nth-child(2){
+    flex-basis: 15%;
+}
+
+.main-left > section:nth-child(3){
+    flex-basis: 10%;
+} */
+
+/********************main-left**********************/
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-title{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    padding-right: 10px;
+
+    margin-bottom: 10px;
+}
+
+.video-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-righter{
+    display: flex;
+}
+/* 
+.copy-righter img,
+.copy-righter > button{
+    flex-basis: 20%;
+} */
+
+.copy-righter > section:nth-child(2){
+    /* flex-basis: 60%; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper2{
+    width: 35px;
+    height: 35px;
+    border-radius: 70px;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#account-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.account-name{
+    font-style: normal;
+    font-size: 12px;
+    font-weight: lighter;
+
+    flex-basis: 50%;
+    width: 150px;
+
+    padding: 2px 5px 1px 5px;
+}
+
+.accont-ct{
+    font-style: normal;
+    font-size: 8px;
+    font-weight: lighter;
+
+    flex-basis: 50%;
+    width: 150px;
+    
+    padding: 1px 5px 2px 5px;
+}
+
+.subscribe{
+    color: white;
+    font-size: 2px;
+
+    border: none;
+    background-color: black;
+    border-radius: 30px;
+
+    height: 30px;
+    width: 50px;
+}
+
+/********************video-content-right **********************/
+.video-content-right button{
+    border: none;
+    border-radius: 30px;
+    height: 25px;
+    padding: none;
+    margin: 0px 2px;
+    
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/********************main-right **********************/
+
+.main-right > .chat > button{
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    height: 25px;
+    margin: 0px 5px;
+    
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+
+    width: 100%;
+}
+
+/* 채팅 다시보기 */
+
+.main-right button { 
+    border: none;
+    border-radius: 5px;
+    margin: 5px 5px;
+    padding: 2px;
+
+    font-size: 12px;
+}
+
+/* list */
+
+.main-right li {
+    list-style-type: none;
+}
+
+.list button:nth-child(1){ 
+    width: 10%;
+}
+
+.list button:nth-child(2){
+    width: 50%;
+}
+
+.list button:nth-child(3){
+    width: 20%;
+}
+
+.list button:nth-child(4){ 
+    width: 5%;
+}
+
+/* 광고/플레이리스트 */
+
+.ad, .list1, .list2, .list3, .list4, .list5, .list6{
+    display: flex;
+
+    flex-basis: calc(100% / 7);
+    
+    margin: 5px;
+}
+.ad #top, .ad #middle, .ad #bottom{
+    flex-basis: 15%;
+}
+
+.ad #empty2{
+    flex-basis: 20%;
+}
+
+.ad button{
+    flex-basis: 20%;
+}
+
+.ad #empty3{
+    flex-basis: 15%;
+}
+
+.ad section, .list1 section, .list2 section, .list3 section,
+.list4 section, .list5 section, .list6 section{
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 50%;
+}
+
+.ad > div, .list1 > div, .list2 > div, .list3 > div,
+.list4 > div, .list5 > div, .list6 > div{
+    flex-basis: 50%;
+    height: 95%;
+}
+
+#adv{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-wrapper3{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section[id^=top]{
+    font-size: 12px;
+
+    flex-basis: 70%;
+
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+section[id^=bottom], section[id^=middle]{
+    font-size: 8px;
+
+    flex-basis: 15%;
+
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+.img-wrapper4, .img-wrapper5, .img-wrapper6, .img-wrapper7, .img-wrapper8,
+.img-wrapper9{
+    width: 45%;
+    height: 100px;
+    border-radius: 8px;
+    border: none;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img[id^=list]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/********************main 영역 나누기**********************/
+
+/* 반응형 모바일 기준 */
+/* 해상도 767px이하면 무조건 여기 작성한대로 css적용해라 */
+@media all and (max-width:767px){
+    head > search-area{ display: none; }
+}
+
+/* pc해상도 1024px */
+/* @media all and (min-width:1024px){
+
+} */

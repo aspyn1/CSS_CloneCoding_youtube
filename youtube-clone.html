@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube-clone</title>
+    <link rel="stylesheet" href="youtube-clone.css">
+    <script src="https://kit.fontawesome.com/323ba1dcd4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <section class="header-left">
+            <section>
+                <a href="#">
+                <button class="fa-solid fa-bars" id="hamberger-button"></button></a>
+            </section>
+            <section><a href="https://www.youtube.com/">
+                <img src="../images/youtube-logo.png" id="youtube-logo"></a>
+            </section>
+        </section>
+
+        <section class="search-area">
+            <section></section>
+            <section>
+                <form action="#" name="search-form">
+                    <fieldset>
+                        <section>
+                            <section>
+                                <input type="search" id="query" name="query"
+                                autocomplete="off" placeholder="검색어를 입력해주세요.">
+                                <button id="keyboard-btn" class="fa-solid fa-keyboard"></button>
+                                <button id="x-btn" class="fa-solid fa-x"></button>
+                            </section>
+                            <botton id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                        </section>
+                        <div class="img-wrapper">
+                            <button class="fa-solid fa-microphone" id="mike-btn"></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section></section>            
+        </section>
+
+        <section class="header-right">
+            <section></section> <!-- 빈공간 -->
+            <section id="video-btn">
+                <a href="#">
+                    <button class="fa-solid fa-video"></button>
+                </a>
+            </section>
+            <section id="arlert-btn">
+                <a href="#">
+                    <button class="fa-regular fa-bell"></button>
+                </a>
+            </section>
+            <section id="profile-btn">
+                <a href="#">
+                    <button class="fa-solid fa-user"></button>
+                </a>
+            </section>
+        </section>        
+    </header>
+
+    <main>
+        <section class="main-left">
+            <section class="video">
+                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/3Hr35Kr2aXA?si=eFSCtv3XqiEuvo6B" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+            </section>
+            <section class="video-title">
+                악뮤(AKMU)의 킬링보이스를 라이브로! - 라면인건가, DINOSAUR, 후라이의 꿈, Love Love, 사람들이 움직이는 게, 200% 시간과 낙엽, 오랜 날 오랜 밤, 낙하
+            </section>
+            <section class="video-content">
+                <section class="copy-righter">
+                    <section class="img-wrapper2">
+                        <img src="../images/clone_youtube/channels4_profile.jpg" id="account-img">
+                    </section>                                                
+                    <section id="account-content">
+                        <section class="account-name">딩고 뮤직 / dingo music</section>
+                        <section class="accont-ct">구독자 460만명</section>
+                    </section>
+                    <button class="subscribe">구독
+                </section>
+                <section class="video-content-right">
+                    <section>
+                        <button id="like" class="fa-regular fa-thumbs-up">14만</button>
+                        <button id="hate" class="fa-regular fa-thumbs-down"></button>
+                        <button id="share" class="fa-solid fa-share">공유</button>
+                        <button id="download1" class="fa-solid fa-download">오프라인 저장</button>
+                        <button id="clip" class="fa-solid fa-scissors">클립</button>
+                        <button id="download2" class="fa-solid fa-plus">저장</button>
+                        <button id="more" class="fa-solid fa-list-ul"></button>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <aside class="main-right">
+            <section class="chat">
+                <button>채팅 다시보기 표시</button>
+            </section>
+            <section class="list">
+                <li>
+                    <button>모두
+                    <button>딩고뮤직 / dingo music 제공</button>
+                    <button>관련콘텐츠
+                    <button> > </button>
+                </li>
+            </section>
+            <section class="ad">
+                <div class="img-wrapper3">
+                    <img src="../images/clone_youtube/ad.jpg" id="adv">
+                </div>
+                <section>
+                    <section id="top">올리브영 공식 온라인몰</section>
+                    <section id="middle">오늘 주문해도 오늘 도착, 오늘드림으로 구매 가능한 상품을 확인하세요!</section>
+                    <section id="bottom">광고 · 올리브영</section>
+                    <section id="empty2"></section>
+                    <button class="fa-solid fa-up-right-from-square">사이트 방문하기</button>
+                    <section id="empty3"></section>                    
+                </section> 
+            </section>
+            <section class="list1">
+                <div class="img-wrapper4">
+                    <img src="../images/clone_youtube/list-1.webp" id="list1">
+                </div>                
+                <section>
+                    <section id="top1">[Playlist] 노동요 안 끊기고 듣고 싶을 때,, 운동 청소 공부 뭐든...</section>
+                    <section id="middle1">탱크플리 TANK PLAYLIST</section>
+                    <section id="bottom1">조회수 41만회 · 3주 전</section>
+                </section>                
+            </section>
+            <section class="list2">
+                <div class="img-wrapper5">
+                    <img src="../images/clone_youtube/list-2.webp" id="list2">
+                </div>    
+                <section>
+                    <section id="top2">한번쯤 스쳐 들어본, 영화 속 재즈[playlist]</section>
+                    <section id="middle2">재즈오빠 Jazzoppa</section>
+                    <section id="bottom2">조회수 5.4만회 · 1개월 전</section>
+                </section>                
+            </section>
+            <section class="list3">
+                <div class="img-wrapper6">
+                    <img src="../images/clone_youtube/list-3.webp" id="list3">
+                </div>  
+                <section>
+                    <section id="top3">이수현 Playlist '심신 안정 보이스'이수현 노래 모음 | 비...</section>
+                    <section id="middle3">Beginagain 비긴어게인</section>
+                    <section id="bottom3">조회수 1536만회 · 3년 전</section>
+                </section>                
+            </section>
+            <section class="list4">
+                <div class="img-wrapper7">
+                    <img src="../images/clone_youtube/list-4.webp" id="list4">
+                </div>  
+                <section>
+                    <section id="top4">[PLAYLIST]'현실남매의 비즈니스' AKMU(악동뮤지션)의 라...</section>
+                    <section id="middle4">THE K-POP</section>
+                    <section id="bottom4">조회수 135만회 · 2년 전</section>
+                </section>                
+            </section>
+            <section class="list5">
+                <div class="img-wrapper8">
+                    <img src="../images/clone_youtube/list-5.webp" id="list5">
+                </div>  
+                <section>
+                    <section id="top5">박원의 킬링보이스를 라이브로!-all of my life, DOWN, 나, 이럴...</section>
+                    <section id="middle5">딩고 뮤직 / dingo music</section>
+                    <section id="bottom5">조회수 51만회 · 3주 전</section>
+                </section>                
+            </section>
+            <section class="list6">
+                <div class="img-wrapper9">
+                    <img src="../images/clone_youtube/list-6.webp" id="list6">
+                </div>
+                <section>
+                    <section id="top6">[LUCY playlist] 사랑하기 위한 삶, 살기 위해 한 사랑 / 내가 좋아...</section>
+                    <section id="middle6">좋은 엽 되렴</section>
+                    <section id="bottom6">조회수 2.3만회 · 2주 전</section>
+                </section>                
+            </section>
+        </section>
+    </main>
+    
+</body>
+</html>
